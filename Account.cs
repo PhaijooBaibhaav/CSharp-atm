@@ -1,10 +1,9 @@
 using System; 
-
 class Account {
 
-    double balance;
-    string name;
-    int pinCode;
+    public double balance;
+    public string name;
+    public int pinCode;
 
     public void withdrawmoney(double amount) {
         balance -= amount;
