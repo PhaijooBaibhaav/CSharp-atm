@@ -44,9 +44,51 @@ class ATM {
 
     }
 
-    public static void AccountMenu() {
-        Console.WriteLine("Write the operation to do\n1. Check Balance 2. Withdraw Money 3. Deposit Money 4. Exit");
-        String choice = Console.ReadLine();
+    public static void AccountMenu(Account account) {
+
+        while (true) {
+
+            Console.WriteLine("Write the operation to do\n1. Check Balance 2. Withdraw Money 3. Deposit Money 4. Exit");
+            String choice = Console.ReadLine();
+
+            switch (choice) {
+
+                case "1":
+                    Console.WriteLine($"Your balance is: {account.GetBalance()}");
+                    break;
+
+                case "2":
+                    Console.WriteLine("Write the amount to withdraw: ");
+
+                    if (double.TryParse(Console.ReadLine(), out double withdrawAmount)) {
+                        account.WithdrawMoney(withdrawAmount);
+                        Console.WriteLine($"${withdrawAmount} withdrawn.");
+                    } else {
+                        Console.WriteLine("Invalid Amount!");
+                    }
+                    break;
+
+                case"3":
+                    Console.WriteLine("Enter the amount to deposit:");
+
+                    if (double.TryParse(Console.ReadLine(), out double depositAmount)) {
+                        account.DepositMoney(depositAmount);
+                        Console.WriteLine($"${depositAmount} deposited");
+                    } else {
+                        Console.WriteLine("Invalid Amount!");
+                    }
+
+                case "4":
+                    Console.WriteLine("Bye!");
+                    return;
+
+                default:
+                    Console.WriteLine("Invalid input!");
+                    break;
+            }
+        }
+
+
     }
 
 }    
