@@ -44,5 +44,9 @@ class ATM {
 
     }
 
+    public static void AccountMenu() {
+        Console.WriteLine("Write the operation to do\n1. Check Balance 2. Withdraw Money 3. Deposit Money 4. Exit");
+        String choice = Console.ReadLine();
+    }
 
 }    
