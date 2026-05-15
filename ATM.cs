@@ -13,7 +13,7 @@ class ATM {
         Console.WriteLine("Write your name: ");
         name = Console.ReadLine();
 
-        Console.WriteLine("Write your pin code: ");
+        Console.WriteLine("write your pin code: ");
         pin = Convert.ToInt32(Console.ReadLine());
 
         Account account = new Account();
@@ -26,5 +26,23 @@ class ATM {
 
     public void Login() {
 
+        Console.WriteLine("Write your name: ");
+        string name = Console.ReadLine(); 
+
+        Console.WriteLine("Write your pin code: ");
+        int pin = Convert.ToInt32(Console.ReadLine());
+
+
+        foreach (Account account in accounts) {
+            if (name == account.name && pin == account.pinCode) {
+                Console.WriteLine($"Logged into {account.name}");
+                return;
+            }
+
+        }
+        Console.WriteLine("Wrong name or pin");
+
     }
+
+
 }    
