@@ -38,8 +38,8 @@ class ATM {
                 Console.WriteLine($"Logged into {account.name}");
                 return;
             }
-
         }
+
         Console.WriteLine("Wrong name or pin");
 
     }
@@ -87,8 +87,5 @@ class ATM {
                     break;
             }
         }
-
-
     }
-
 }    
