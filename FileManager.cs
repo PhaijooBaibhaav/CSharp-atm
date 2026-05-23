@@ -31,7 +31,7 @@ class FileManager {
         string[] lines = File.ReadAllLines(path);
 
         foreach (string line in lines) {
-            string[] data = lines.Split(',');
+            string[] data = line.Split(',');
 
             Account account = new Account();
 
