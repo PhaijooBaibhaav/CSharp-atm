@@ -40,6 +40,7 @@ class ATM {
         foreach (Account account in accounts) {
             if (name == account.name && pin == account.pinCode) {
                 Console.WriteLine($"Logged into {account.name}");
+                AccountMenu(account);
                 return;
             }
         }
