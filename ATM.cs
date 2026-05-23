@@ -77,6 +77,7 @@ class ATM {
                     } else {
                         Console.WriteLine("Invalid Amount!");
                     }
+                    break;
 
                 case "4":
                     Console.WriteLine("Bye!");
