@@ -4,6 +4,10 @@ using System.Collections.Generic;
 class ATM {
 
     private List<Account> accounts = new List<Account>();
+    
+    public ATM(List<Account> accounts) {
+        this.accounts = accounts;
+    }
 
     int pin; 
     string name; 
