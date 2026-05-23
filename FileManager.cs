@@ -11,6 +11,10 @@ class FileManager {
 
         StreamWriter writer = new StreamWriter(path);
 
+        // foreach (Account a in accounts) {
+        //     Console.WriteLine($"{a.name}, {a.pinCode}");
+        // }
+
             foreach (Account account in accounts)
             {
                 writer.WriteLine(
