@@ -53,7 +53,7 @@ class ATM {
 
         while (true) {
 
-            Console.WriteLine("Write the operation to do\n1. Check Balance 2. Withdraw Money 3. Deposit Money 4. Exit");
+            Console.WriteLine("Write the operation to do\n1. Check Balance 2. Withdraw Money 3. Deposit Money 4. LogOut");
             String choice = Console.ReadLine();
 
             switch (choice) {
