@@ -85,7 +85,6 @@ class ATM {
                     break;
 
                 case "4":
-                    Console.WriteLine("Bye!");
                     return;
 
                 default:
