@@ -6,7 +6,9 @@ class Program {
         List<Account> accounts = FileManager.LoadData();
         ATM atm = new ATM(accounts);
 
-        while (true) {
+        bool running = true;
+
+        while (running) {
 
             String choice; 
             Console.WriteLine("Write your choice: ");
@@ -24,11 +26,11 @@ class Program {
                 case "2": 
                     atm.Login();
                     break;
-                    return;
 
                 case "3": 
                     Console.WriteLine("Bye!");
-                    return;
+                    running = false;
+                    break;
 
                 default:
                     Console.WriteLine("Invalid input, try again.");
@@ -38,6 +40,7 @@ class Program {
         }
 
         FileManager.SaveData(accounts);
+        Console.WriteLine("Bye!");
 
     }
 }

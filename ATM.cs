@@ -4,7 +4,7 @@ using System.Collections.Generic;
 class ATM {
 
     private List<Account> accounts = new List<Account>();
-    
+
     public ATM(List<Account> accounts) {
         this.accounts = accounts;
     }
@@ -26,6 +26,7 @@ class ATM {
         account.pinCode = pin;
 
         accounts.Add(account);
+        Console.Clear();
     }
 
     public void Login() {
@@ -60,6 +61,10 @@ class ATM {
 
                 case "1":
                     Console.WriteLine($"Your balance is: {account.GetBalance()}");
+
+                    Console.ReadKey();
+                    Console.Clear();
+
                     break;
 
                 case "2":
@@ -71,6 +76,10 @@ class ATM {
                     } else {
                         Console.WriteLine("Invalid Amount!");
                     }
+
+                    Console.ReadKey();
+                    Console.Clear();
+
                     break;
 
                 case"3":
@@ -82,6 +91,10 @@ class ATM {
                     } else {
                         Console.WriteLine("Invalid Amount!");
                     }
+
+                    Console.ReadKey();
+                    Console.Clear();
+
                     break;
 
                 case "4":
@@ -89,6 +102,10 @@ class ATM {
 
                 default:
                     Console.WriteLine("Invalid input!");
+
+                    Console.ReadKey();
+                    Console.Clear();
+
                     break;
             }
         }
