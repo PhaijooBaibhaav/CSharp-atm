@@ -17,4 +17,8 @@ cd CSharp-atm
 ````bash
 dotnet run
 ````
-Made by: Baibhav Phaijoo
+
+# Releases
+See releases at: https://github.com/PhaijooBaibhaav/CSharp-atm/releases .
+#
+Made by: **Baibhav Phaijoo**
