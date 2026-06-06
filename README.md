@@ -18,6 +18,21 @@ cd CSharp-atm
 dotnet run
 ````
 
+# Showcase
+![Screenshot8](assets/Screenshots/Screenshot%20(8).png)
+#
+![Screenshot9](assets/Screenshots/Screenshot%20(9).png)
+#
+![Screenshot10](assets/Screenshots/Screenshot%20(10).png)
+#
+![Screenshot11](assets/Screenshots/Screenshot%20(11).png)
+#
+![Screenshot12](assets/Screenshots/Screenshot%20(12).png)
+#
+![Screenshot13](assets/Screenshots/Screenshot%20(13).png)
+#
+
+
 # Releases
 See releases at: https://github.com/PhaijooBaibhaav/CSharp-atm/releases .
 #
